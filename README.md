@@ -6,11 +6,11 @@
 - supoorts signual interruption
 
 ## Enqueue
-Consumers:  php run.php consumer:enqueue
+Consumers:  ``php run.php consumer:enqueue``
 
-Producer:  php run.php producer:enqueue
+Producer:  ``php run.php producer:enqueue``
 
-Stats: php run.php stats:enqueue
+Stats: ``php run.php stats:enqueue``
 
 Just get and process message system. One message per subscriber with acknowledge.
 
@@ -41,11 +41,11 @@ queue le
 
 https://redis.io/topics/streams-intro
 
-Consumers:  php run.php consumer:messenger
+Consumers:  ``php run.php consumer:messenger``
 
-Producer:  php run.php producer:messenger
+Producer:  ``php run.php producer:messenger``
 
-Stats: php run.php stats:messenger
+Stats: ``php run.php stats:messenger``
 
 ## Messenger , example. We have controls on workers, groups
 
