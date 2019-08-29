@@ -1,0 +1,27 @@
+{
+    "name": "valentinn/queues-simple-test",
+    "authors": [
+        {
+            "name": "valentin",
+            "email": "nikolaiev.v@d2.digital"
+        }
+    ],
+    "require": {
+        "enqueue/enqueue-bundle": "^0.9.12",
+        "monolog/monolog": "1.24.*",
+        "symfony/messenger": "^4.3",
+        "enqueue/messenger-adapter": "^0.2.2",
+        "symfony/console": "^4.3",
+        "alexeyshockov/symfony-signal-helper": "^1.2",
+        "ext-pcntl": "*",
+        "enqueue/redis": "^0.9.12",
+        "predis/predis": "^1",
+        "fzaninotto/faker": "^1.8",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "IWS\\Queues\\": "src/"
+        }
+    }
+}
