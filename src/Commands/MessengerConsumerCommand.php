@@ -50,20 +50,24 @@ class MessengerConsumerCommand extends AbstractConsumerCommand
         $result = $receiver->get();
         if (!empty($result)) {
             /**
-             * @var Envelope $envolve
+             * @var Envelope $envelope
              */
             $envelope = $receiver->get()[0];
-            /**
-             * @var $receivedMessage MessengerMsg
-             */
-            $receivedMessage = $envelope->getMessage();
-            $messages = json_decode($receivedMessage->getMessage());
 
-            foreach ($messages as $fakeMessage) {
-                $this->getLogger()->info('Processing message... ' . json_encode($fakeMessage));
-                sleep(2);
+            if ($envelope) {
+                /**
+                 * @var $receivedMessage MessengerMsg
+                 */
+                $receivedMessage = $envelope->getMessage();
+                $messages = json_decode($receivedMessage->getMessage());
+
+                foreach ($messages as $fakeMessage) {
+                    $this->getLogger()->info('Processing message... ' . json_encode($fakeMessage));
+                    sleep(1);
+                }
             }
         }
+        sleep(1);
 
     }
 
