@@ -1,3 +1,6 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/ValentinNikolaev/queues-simple-test)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=ValentinNikolaev.queues-simple-test)
+
 ## Simple demo for enqueue and symfony/messenger redis queues
 - logs via Monolog
 - logs in console
